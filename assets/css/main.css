@@ -2425,97 +2425,67 @@ input, select, textarea {
 
 
 			/*Time Line*/
-
-			.main-timeline-section{
-position: relative;
-width: 100%;
-margin:auto;
-height:300px;
-}
-.main-timeline-section .timeline-start,
-.main-timeline-section .timeline-end{
-position: absolute;
-background:#F2635F;
-border-radius:100px;
-top:50%;
-transform: translateY(-50%);
-width:30px;
-height:30px;
-}
-.main-timeline-section .timeline-end{
-right:0px;
-}
-.main-timeline-section .conference-center-line{
-position: absolute;
-width:100%;
-height:5px;
-top:50%;
-transform: translateY(-50%);
-background:#F2635F;
-}
-.timeline-article{
-width: 20%;
-position: relative;
-min-height: 300px;
-float:right;
-}
-.timeline-article .content-date{
-position: absolute;
-top: 35%;
-left: -30px;
-font-size:18px;
-}
-.timeline-article .meta-date{
-position: absolute;
-top: 50%;
-left: 0px;
-transform: translateY(-50%);
-width:20px;
-height:20px;
-border-radius: 100%;
-background:#fff;
-border:1px solid #F2635F;
-}
-.timeline-article .content-box{
-box-shadow: 2px 2px 4px 0px #c1c1c1;
-border:1px solid #F2635F;
-border-radius: 5px;
-background-color: #fff;
-width: 180px;
-position: absolute;
-top: 60%;
-left: -80px;
-padding:10px;
-}
-.timeline-article-top .content-box:before{
-content: " ";
-position:absolute;
-left:50%;
-transform: translateX(-50%);
-top:-20px;
-border:10px solid transparent;
-border-bottom-color: #F2635F;
-}
-.timeline-article-bottom .content-date{
-top: 59%;
-}
-.timeline-article-bottom .content-box{
-top: 0%;
-}
-.timeline-article-bottom .content-box:before{
-content: " ";
-position:absolute;
-left:50%;
-transform: translateX(-50%);
-bottom:-20px;
-border:10px solid transparent;
-border-top-color:#F2635F;
-}
-@media (max-width:460px){
 body{
-display: none;
+    background:#eee;
+    margin-top:20px;
 }
+.hori-timeline .events {
+    border-top: 3px solid #e9ecef;
 }
+.hori-timeline .events .event-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    margin-right: 0;
+}
+.hori-timeline .events .event-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #dee2e6;
+    top: 0;
+}
+.hori-timeline .events .event-list .event-date {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+@media (min-width: 1140px) {
+    .hori-timeline .events .event-list {
+        display: inline-block;
+        width: 24%;
+        padding-top: 45px;
+    }
+    .hori-timeline .events .event-list .event-date {
+        top: -12px;
+    }
+}
+.bg-soft-primary {
+    background-color: rgba(64,144,203,.3)!important;
+}
+.bg-soft-success {
+    background-color: rgba(71,189,154,.3)!important;
+}
+.bg-soft-danger {
+    background-color: rgba(231,76,94,.3)!important;
+}
+.bg-soft-warning {
+    background-color: rgba(249,213,112,.3)!important;
+}
+.card {
+    border: none;
+    margin-bottom: 24px;
+    -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+    box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+}
+
+
 
 		/* Copyright */
 
