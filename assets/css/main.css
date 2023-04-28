@@ -173,10 +173,16 @@ input, select, textarea {
 			font-weight: 700;
 		}
 
+		h2.headertekst {
+  text-align: center;
+}
+
 	h2 {
 		font-size: 2em;
 		letter-spacing: -0.015em;
 	}
+
+
 
 	h3 {
 		font-size: 1.5em;
