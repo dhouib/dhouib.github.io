@@ -18,7 +18,7 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	margin: 0;
+	margin: 3;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -300,7 +300,7 @@ input, select, textarea {
 		}
 
 		.row.gtr-uniform > * > :last-child {
-			margin-bottom: 0;
+			margin-bottom: O;
 		}
 
 		.row.aln-left {
